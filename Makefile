@@ -22,7 +22,7 @@ bench-put: build install-benchmark
 	@echo "Running benchmark: put $(ARGS)"
 	./scripts/benchmark_test.sh put $(ARGS)
 
-PLATFORMS=linux-amd64 linux-386 linux-arm linux-arm64 linux-ppc64le linux-s390x darwin-amd64 darwin-arm64 windows-amd64 windows-arm64
+PLATFORMS=linux-amd64 linux-386 linux-arm linux-arm64 linux-ppc64le linux-s390x linux-riscv64 darwin-amd64 darwin-arm64 windows-amd64 windows-arm64
 
 .PHONY: build-all
 build-all:
